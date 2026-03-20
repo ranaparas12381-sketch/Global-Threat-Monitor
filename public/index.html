@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-Time Global DDoS Threat Intelligence Dashboard - Visualize cyber attacks worldwide on a 3D globe.">
+    <title>Global Threat Monitor | Real-Time DDoS Intelligence</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/globe.gl@2.27.2/dist/globe.gl.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">⬡</div>
+            <div class="loader-text">INITIALIZING THREAT INTELLIGENCE NETWORK...</div>
+            <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+        </div>
+    </div>
+
+    <!-- HUD Overlay -->
+    <div id="hud">
+        <div class="hud-header">
+            <div class="hud-logo">
+                <span class="logo-icon">◈</span>
+                <div>
+                    <div class="logo-title">GLOBAL THREAT MONITOR</div>
+                    <div class="logo-sub">DDoS Intelligence Dashboard v2.0</div>
+                </div>
+            </div>
+            <div class="status-badge">
+                <span class="pulse-dot"></span>
+                <span>LIVE</span>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">ATTACKS/SEC</div>
+                <div class="stat-value" id="attack-rate">0</div>
+                <div class="stat-trend" id="rate-trend">↑ +12%</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">BANDWIDTH</div>
+                <div class="stat-value"><span id="bandwidth">0</span> <span class="stat-unit">Tbps</span></div>
+                <div class="stat-trend" id="bw-trend">↑ Peak</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">ACTIVE ARCS</div>
+                <div class="stat-value" id="total-attacks">0</div>
+                <div class="stat-trend">Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">UPTIME</div>
+                <div class="stat-value" id="uptime">00:00</div>
+                <div class="stat-trend">Monitoring</div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="panel-header">TOP TARGETS</div>
+            <div id="target-list" class="target-list">
+                <div class="target-item"><span class="target-bar" style="width: 80%"></span><span class="target-name">United States</span><span class="target-count" id="tc-usa">--</span></div>
+                <div class="target-item"><span class="target-bar" style="width: 65%"></span><span class="target-name">Germany</span><span class="target-count" id="tc-de">--</span></div>
+                <div class="target-item"><span class="target-bar" style="width: 55%"></span><span class="target-name">Japan</span><span class="target-count" id="tc-jp">--</span></div>
+                <div class="target-item"><span class="target-bar" style="width: 42%"></span><span class="target-name">Brazil</span><span class="target-count" id="tc-br">--</span></div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="panel-header">ATTACK FEED</div>
+            <div id="attack-feed" class="attack-feed"></div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div id="controls">
+        <button class="ctrl-btn active" id="btn-all" onclick="filterAttacks('all')">ALL</button>
+        <button class="ctrl-btn" id="btn-vol" onclick="filterAttacks('Volumetric')">
+            <span class="dot" style="background:#ff4444"></span>VOLUMETRIC
+        </button>
+        <button class="ctrl-btn" id="btn-http" onclick="filterAttacks('HTTP Flood')">
+            <span class="dot" style="background:#ffff00"></span>HTTP FLOOD
+        </button>
+        <button class="ctrl-btn" id="btn-bot" onclick="filterAttacks('Botnet')">
+            <span class="dot" style="background:#00ffff"></span>BOTNET
+        </button>
+        <button class="ctrl-btn" id="btn-pause" onclick="togglePause()">⏸ PAUSE</button>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+        <div class="legend-title">THREAT TYPES</div>
+        <div class="legend-item"><span class="dot" style="background: #ff4444;"></span>Volumetric DDoS (UDP/TCP)</div>
+        <div class="legend-item"><span class="dot" style="background: #ffff00;"></span>Application Layer (HTTP Flood)</div>
+        <div class="legend-item"><span class="dot" style="background: #00ffff;"></span>Botnet Activity</div>
+        <div class="legend-item"><span class="dot" style="background: #ff44ff;"></span>DNS Amplification</div>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip"></div>
+
+    <!-- Globe container -->
+    <div id="globeViz"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/globe.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

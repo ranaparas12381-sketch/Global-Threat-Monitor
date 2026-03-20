@@ -1,0 +1,35 @@
+# ── Dependencies ─────────────────────────────────────────────
+node_modules/
+.npm/
+
+# ── Environment (NEVER commit secrets) ───────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Build / Output ────────────────────────────────────────────
+dist/
+build/
+coverage/
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+
+# ── OS & Editor ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── SSH Keys (CRITICAL — should NEVER be in a repo) ──────────
+*.pem
+*.key
+*.pub
+id_rsa
+id_ed25519
+we
+we.pub
