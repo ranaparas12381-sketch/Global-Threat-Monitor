@@ -20,6 +20,7 @@
 ---
 
 ## 📸 Live Preview
+![WhatsApp Image 2026-03-20 at 19 08 32](https://github.com/user-attachments/assets/eb478715-c303-484f-b95b-e0dd900e1f87)
 
 The dashboard shows a real-time visualization of simulated/live DDoS attacks:
 
