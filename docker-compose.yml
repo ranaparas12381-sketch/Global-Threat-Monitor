@@ -1,5 +1,5 @@
 # ============================================================
-# Global Threat Monitor — Docker Compose
+# Global Threat Monitor - Docker Compose
 # ============================================================
 # Usage:
 #   docker compose up              (foreground)

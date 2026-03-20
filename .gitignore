@@ -25,7 +25,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# ── SSH Keys (CRITICAL — should NEVER be in a repo) ──────────
+# ── SSH Keys (CRITICAL - should NEVER be in a repo) ──────────
 *.pem
 *.key
 *.pub

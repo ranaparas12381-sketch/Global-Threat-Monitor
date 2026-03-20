@@ -1,5 +1,5 @@
 # ============================================================
-# Global Threat Monitor — Dockerfile
+# Global Threat Monitor - Dockerfile
 # Multi-stage build for lean production image
 # ============================================================
 
@@ -7,7 +7,7 @@
 FROM node:20-alpine AS builder
 
 LABEL maintainer="your-email@example.com"
-LABEL description="Global Threat Monitor — DDoS Intelligence Dashboard"
+LABEL description="Global Threat Monitor - DDoS Intelligence Dashboard"
 
 # Install only production dependencies
 WORKDIR /app

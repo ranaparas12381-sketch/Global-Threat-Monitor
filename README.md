@@ -1,4 +1,4 @@
-# 🌐 Global Threat Monitor
+# Global Threat Monitor
 
 <div align="center">
 
@@ -19,28 +19,28 @@
 
 ---
 
-## 📸 Live Preview
+## Live Preview
 ![WhatsApp Image 2026-03-20 at 19 08 32](https://github.com/user-attachments/assets/eb478715-c303-484f-b95b-e0dd900e1f87)
 
 The dashboard shows a real-time visualization of simulated/live DDoS attacks:
 
 ```
 ╔════════════════════════════════════════════╗
-║   📡 GLOBAL THREAT MONITOR v2.0  ◈ LIVE   ║
+║   GLOBAL THREAT MONITOR v2.0  ◈ LIVE   ║
 ╠════════════════════════════════════════════╣
 ║  ATTACKS/SEC    BANDWIDTH      ACTIVE ARCS ║
 ║    2,847 ↑12%   1.73 Tbps ↑    200        ║
 ╠════════════════════════════════════════════╣
 ║  TOP TARGETS (Real-Time Ranks)             ║
-║  🇺🇸 United States  ████████ 847          ║
-║  🇩🇪 Germany        ██████   523          ║
-║  🇯🇵 Japan          █████    451          ║
-║  🇧🇷 Brazil         ████    389           ║
+║  United States  ████████ 847          ║
+║  Germany        ██████   523          ║
+║  Japan          █████    451          ║
+║  Brazil         ████    389           ║
 ╠════════════════════════════════════════════╣
 ║  LIVE ATTACK FEED                          ║
-║  12:34:56  🔴 Russia → United States      ║
-║  12:34:51  🟡 China → Germany             ║
-║  12:34:48  🟦 Nigeria → Japan             ║
+║  12:34:56  Russia → United States      ║
+║  12:34:51  China → Germany             ║
+║  12:34:48  Nigeria → Japan             ║
 ╠════════════════════════════════════════════╣
 ║         [Interactive 3D Globe with Arcs]  ║
 ║     Showing attack paths in real-time      ║
@@ -59,27 +59,27 @@ The dashboard shows a real-time visualization of simulated/live DDoS attacks:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **🌍 3D Interactive Globe** — Powered by [Globe.gl](https://globe.gl/), supports drag, zoom, and auto-rotation
-- **⚡ Real-Time Simulation Engine** — Generates realistic attack patterns every 800ms with full visual effects
-- **🎯 Attack Type Filtering** — 4 distinct attack types: Volumetric DDoS, HTTP Flood, Botnet, DNS Amplification
-- **📊 Live HUD Dashboard** — Displays attack rate (APS), bandwidth (Tbps), active arcs, uptime, top targets
-- **🏆 Top Targets Bar Chart** — Real-time ranking of most-targeted countries with dynamic visual updates
-- **🔀 Interactive Controls** — Filter by threat type, pause/resume simulation with one click
-- **📡 Cloudflare Radar Integration** — Optional live attack data via secure server-side proxy (keys never exposed)
-- **🎨 Cyber-Aesthetic UI** — Glowing green terminal-style design with scanline effect overlay
-- **📱 Fully Responsive** — Optimized for desktop, tablet, and mobile devices
-- **🔒 Enterprise Security** — Helmet.js, Content-Security-Policy, rate limiting, non-root Docker process
-- **🐳 Docker & Compose Ready** — Multi-stage build, optional Nginx reverse proxy, health checks included
-- **✅ Fully Tested** — Jest unit tests, Supertest integration tests with 100% code coverage
-- **⚙️ Zero Configuration Start** — Works immediately in simulation mode; no API keys required
+- **3D Interactive Globe** - Powered by [Globe.gl](https://globe.gl/), supports drag, zoom, and auto-rotation
+- **Real-Time Simulation Engine** - Generates realistic attack patterns every 800ms with full visual effects
+- **Attack Type Filtering** - 4 distinct attack types: Volumetric DDoS, HTTP Flood, Botnet, DNS Amplification
+- **Live HUD Dashboard** - Displays attack rate (APS), bandwidth (Tbps), active arcs, uptime, top targets
+- **Top Targets Bar Chart** - Real-time ranking of most-targeted countries with dynamic visual updates
+- **Interactive Controls** - Filter by threat type, pause/resume simulation with one click
+- **Cloudflare Radar Integration** - Optional live attack data via secure server-side proxy (keys never exposed)
+- **Cyber-Aesthetic UI** - Glowing green terminal-style design with scanline effect overlay
+- **Fully Responsive** - Optimized for desktop, tablet, and mobile devices
+- **Enterprise Security** - Helmet.js, Content-Security-Policy, rate limiting, non-root Docker process
+- **Docker & Compose Ready** - Multi-stage build, optional Nginx reverse proxy, health checks included
+- **Fully Tested** - Jest unit tests, Supertest integration tests with 100% code coverage
+- **Zero Configuration Start** - Works immediately in simulation mode; no API keys required
 
 ---
 
-## 🚀 Quick Start (< 2 minutes)
+## Quick Start (< 2 minutes)
 
-### ✅ Option 1: Node.js Development Server (Easiest)
+### Option 1: Node.js Development Server (Easiest)
 
 **Requirements:** Node.js ≥ 18, npm ≥ 9
 
@@ -101,7 +101,7 @@ npm run dev
 
 ---
 
-### 🐳 Option 2: Docker (Production-Ready)
+### Option 2: Docker (Production-Ready)
 
 **Requirements:** Docker ≥ 24, Docker Compose ≥ 2
 
@@ -124,7 +124,7 @@ docker compose --profile nginx up --build
 
 ---
 
-### 🔧 Optional: Configure Real Cloudflare Radar Data
+### Optional: Configure Real Cloudflare Radar Data
 
 By default, the dashboard shows **simulated attack data**. To use **real Cloudflare Radar data**:
 
@@ -139,7 +139,7 @@ By default, the dashboard shows **simulated attack data**. To use **real Cloudfl
 
 ---
 
-## ⚙️ Usage & Configuration
+## Usage & Configuration
 
 ### Environment Variables
 
@@ -159,7 +159,7 @@ Available variables:
 | `CLOUDFLARE_TOKEN` | _(empty)_     | Cloudflare Radar API token (optional)                  |
 | `ALLOWED_ORIGIN`   | `*`           | CORS origin (restrict in production)                   |
 
-> ⚠️ **Security:** Never commit `.env` to git. It's already in `.gitignore`.
+> **Security:** Never commit `.env` to git. It's already in `.gitignore`.
 
 ### Frontend Settings
 
@@ -197,7 +197,7 @@ const CONFIG = {
 
 ---
 
-## 🔌 Cloudflare Radar Integration
+## Cloudflare Radar Integration
 
 ### Running in Simulation Mode (Default)
 
@@ -241,76 +241,76 @@ To visualize **real DDoS attacks** from [Cloudflare](https://radar.cloudflare.co
    npm run dev
    ```
 
-The server acts as a **secure proxy**—your API key is never exposed to the browser.
+The server acts as a **secure proxy** - your API key is never exposed to the browser.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 global-threat-monitor/
 │
-├── 📁 public/                          # Frontend static files (served by Express)
-│   ├── 📄 index.html                   # Main HTML document (includes all JS/CSS)
-│   ├── 📁 css/
+├── [DIR] public/                       # Frontend static files (served by Express)
+│   ├── [FILE] index.html               # Main HTML document (includes all JS/CSS)
+│   ├── [DIR] css/
 │   │   └── style.css                   # Complete stylesheet (1000+ lines)
 │   │                                    # Cyber-aesthetic design, animations, responsive
-│   ├── 📁 js/
+│   ├── [DIR] js/
 │   │   ├── config.js                   # Central configuration object (all tweakable settings)
 │   │   ├── data.js                     # Country data, attack type definitions, generator
 │   │   ├── globe.js                    # Globe.gl initialization and rendering functions
 │   │   ├── ui.js                       # HUD, statistics, controls, feed, loader screen
 │   │   └── app.js                      # Main application entry point and simulation loop
-│   └── 📁 assets/
+│   └── [DIR] assets/
 │       └── favicon.svg                 # SVG favicon
 │
-├── 📁 docker/
+├── [DIR] docker/
 │   └── nginx.conf                      # Nginx reverse proxy configuration (optional)
 │
-├── 📁 tests/
+├── [DIR] tests/
 │   └── server.test.js                  # Jest + Supertest endpoint tests
 │
-├── 📁 docs/
+├── [DIR] docs/
 │   └── api.md                          # API endpoint documentation
 │
-├── 📁 scripts/
+├── [DIR] scripts/
 │   └── setup.sh                        # One-command setup automation
 │
-├── 📄 server.js                        # Express.js backend + Cloudflare Radar proxy
-├── 📄 package.json                     # NPM manifest (dependencies, scripts)
-├── 📄 Dockerfile                       # Multi-stage Docker build (production-optimized)
-├── 📄 docker-compose.yml               # Docker Compose (app + optional nginx)
-├── 📄 jest.config.json                 # Jest testing framework configuration
-├── 📄 .eslintrc.json                   # ESLint code quality rules
-├── 📄 .env.example                     # Environment variable template
-├── 📄 .gitignore                       # Git ignore (blocks secrets, dependencies, logs)
-├── 📄 CHANGELOG.md                     # Version history
-├── 📄 LICENSE                          # MIT License text
-└── 📄 README.md                        # This documentation
+├── [FILE] server.js                    # Express.js backend + Cloudflare Radar proxy
+├── [FILE] package.json                 # NPM manifest (dependencies, scripts)
+├── [FILE] Dockerfile                   # Multi-stage Docker build (production-optimized)
+├── [FILE] docker-compose.yml           # Docker Compose (app + optional nginx)
+├── [FILE] jest.config.json             # Jest testing framework configuration
+├── [FILE] .eslintrc.json               # ESLint code quality rules
+├── [FILE] .env.example                 # Environment variable template
+├── [FILE] .gitignore                   # Git ignore (blocks secrets, dependencies, logs)
+├── [FILE] CHANGELOG.md                 # Version history
+├── [FILE] LICENSE                      # MIT License text
+└── [FILE] README.md                    # This documentation
 ```
 
 ### Key Directories Explained
 
-**`public/js/` — The Core Application**
-- `config.js` — One source of truth for all settings
-- `data.js` — Attack generation, country coordinates
-- `globe.js` — 3D rendering logic
-- `ui.js` — Dashboard UI, HUD updates (⚠️ Fixed: missing closing brace added)
-- `app.js` — Bootstrap and main loop
+**`public/js/` - The Core Application**
+- `config.js` - One source of truth for all settings
+- `data.js` - Attack generation, country coordinates
+- `globe.js` - 3D rendering logic
+- `ui.js` - Dashboard UI, HUD updates (Warning: Fixed - missing closing brace added)
+- `app.js` - Bootstrap and main loop
 
-**`tests/` — Testing**
+**`tests/` - Testing**
 - Unit tests for data generation
 - Integration tests for Express endpoints
 - Run with `npm test`
 
-**`docker/` — Containerization**
+**`docker/` - Containerization**
 - Production-ready multi-stage build
 - Non-root user execution
 - Health checks included
 
 ---
 
-## 🛠️ Development Commands
+## Development Commands
 
 ```bash
 # Install dependencies
@@ -346,7 +346,7 @@ docker compose --profile nginx up --build
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run Jest test suite
@@ -363,14 +363,14 @@ npm test server.test.js
 ```
 
 The test suite includes:
-- ✅ `/health` endpoint validation
-- ✅ `/api/radar/attacks` endpoint (with/without token)
-- ✅ SPA fallback routing
-- ✅ Data generation and country selection
+- [OK] `/health` endpoint validation
+- [OK] `/api/radar/attacks` endpoint (with/without token)
+- [OK] SPA fallback routing
+- [OK] Data generation and country selection
 
 ---
 
-## 🔒 Security Features
+## Security Features
 
 This project implements multiple security layers:
 
@@ -403,7 +403,7 @@ Then add your SSL certificate to the Nginx config.
 
 ---
 
-## 📖 API Reference
+## API Reference
 
 ### `GET /health`
 
@@ -447,22 +447,7 @@ Example: `?dateRange=7d&limit=100`
 
 ---
 
-## 📚 Technology Stack
-
-| **Frontend** | Vanilla JavaScript (ES6+), HTML5, CSS3 |
-| **3D Graphics** | Globe.gl v2.27 (Three.js wrapper) |
-| **Backend** | Node.js 20+, Express 4.19 |
-| **Package Manager** | npm 9+ |
-| **Security** | Helmet.js, express-rate-limit, CORS |
-| **Container** | Docker 24+, Docker Compose 2+ |
-| **Networking** | Nginx 1.27 (optional reverse proxy) |
-| **Testing** | Jest 29, Supertest 7 |
-| **Development** | Nodemon, ESLint, Prettier |
-| **Data Source** | Cloudflare Radar API (optional) or simulation |
-
----
-
-## � Docker Deployment Guide
+##  Docker Deployment Guide
 
 ### Prerequisites
 
@@ -494,34 +479,34 @@ docker compose down
 ```
 ┌─────────────────────────────────────────────────────┐
 │         Docker Compose Network                      │
-│  (threat-monitor-net - bridge driver)              │
+│  (threat-monitor-net - bridge driver)               │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
-│  ┌──────────────────────┐                         │
-│  │  Global Threat       │                         │
-│  │  Monitor Container   │                         │
-│  │  (Node.js 20-Alpine) │                         │
-│  │  Port: 3000          │                         │
-│  │  User: appuser:1001  │                         │
-│  │  Health: 30s checks  │                         │
-│  └──────────────────────┘                         │
-│           │                                       │
-│           │ Internal network request              │
-│           ↓                                       │
-│  ┌──────────────────────┐ (Optional Profile)     │
-│  │  Nginx Reverse Proxy │ (--profile nginx)      │
-│  │  (Alpine Linux)      │                         │
-│  │  Port: 80            │                         │
-│  │  Upstream: :3000     │                         │
-│  └──────────────────────┘                         │
-│                                                   │
+│  ┌──────────────────────┐                           │
+│  │  Global Threat       │                           │
+│  │  Monitor Container   │                           │
+│  │  (Node.js 20-Alpine) │                           │
+│  │  Port: 3000          │                           │
+│  │  User: appuser:1001  │                           │
+│  │  Health: 30s checks  │                           │
+│  └──────────────────────┘                           │
+│           │                                         │
+│           │ Internal network request                │
+│           ↓                                         │
+│  ┌──────────────────────┐ (Optional Profile)        │
+│  │  Nginx Reverse Proxy │ (--profile nginx)         │
+│  │  (Alpine Linux)      │                           │
+│  │  Port: 80            │                           │
+│  │  Upstream: :3000     │                           │  
+│  └──────────────────────┘                           │
+│                                                     │
 └─────────────────────────────────────────────────────┘
 ```
 
 ### Detailed Docker Compose Configuration
 
 ```yaml
-# version 3.9+ — Compatible with latest Docker/Compose
+# version 3.9+ - Compatible with latest Docker/Compose
 
 services:
   app:
@@ -649,14 +634,14 @@ docker compose config
 ### Multi-Stage Dockerfile Explained
 
 ```dockerfile
-# Stage 1: Builder — Installs dependencies
+# Stage 1: Builder - Installs dependencies
 # Uses full Node image (~900MB), downloads npm packages
 FROM node:20-alpine AS builder
 ...
 RUN npm ci --only=production  # Install only prod deps
 RUN npm cache clean --force   # Remove npm cache
 
-# Stage 2: Production — Lightweight runtime image
+# Stage 2: Production - Lightweight runtime image
 # Only includes the built artifacts, not build tools
 FROM node:20-alpine AS production
 ...
@@ -811,7 +796,7 @@ docker compose -f docker-compose.scale.yml up --build
 
 ---
 
-## 🌟 Architecture & Design Patterns
+## Architecture & Design Patterns
 
 ### Application Architecture
 
@@ -824,14 +809,14 @@ docker compose -f docker-compose.scale.yml up --build
                      ↓
 ┌─────────────────────────────────────────────────────────┐
 │           Node.js Express Server                        │
-│  ┌──────────────────────────────────────────────────┐  │
-│  │  Static File Server (public/*) → Served as-is   │  │
-│  │  Rate Limiter → 100 req/15min per IP            │  │
-│  │  Security Middleware → Helmet.js, CSP headers   │  │
-│  │  CORS Handler → Configurable via env            │  │
-│  │  GET /health → Server status                    │  │
-│  │  GET /api/radar/attacks → Cloudflare Proxy      │  │
-│  └──────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────┐   │
+│  │  Static File Server (public/*) → Served as-is    │   │
+│  │  Rate Limiter → 100 req/15min per IP             │   │
+│  │  Security Middleware → Helmet.js, CSP headers    │   │
+│  │  CORS Handler → Configurable via env             │   │
+│  │  GET /health → Server status                     │   │
+│  │  GET /api/radar/attacks → Cloudflare Proxy       │   │
+│  └──────────────────────────────────────────────────┘   │
 └────────────────────┬────────────────────────────────────┘
                      │ (Optional)
                      ↓
@@ -920,11 +905,11 @@ let world = null           // Globe instance
 let simulationInterval = null  // Loop handle
 ```
 
-No external state management (Redux, Vuex) needed—simple, direct mutation.
+No external state management (Redux, Vuex) needed - simple, direct mutation.
 
 ---
 
-## 🎨 Advanced Styling & Customization
+## Advanced Styling & Customization
 
 ### Color Scheme
 
@@ -987,7 +972,7 @@ All components automatically use new colors!
 
 ---
 
-## 🔐 Advanced Security Topics
+## Advanced Security Topics
 
 ### Content Security Policy (CSP)
 
@@ -1099,15 +1084,17 @@ if (!TOKEN) {
 
 ---
 
-## 📊 Performance Optimization
+## Performance Optimization
 
 ### Frontend Performance
 
+**Frontend Performance**
+
 **Metrics (with 200 concurrent arcs):**
-- ✅ Initial load: <2 seconds
-- ✅ Frame rate: 60 FPS (stable)
-- ✅ Memory: ~50-80 MB
-- ✅ CPU: <15% average
+- [OK] Initial load: <2 seconds
+- [OK] Frame rate: 60 FPS (stable)
+- [OK] Memory: ~50-80 MB
+- [OK] CPU: <15% average
 
 **Optimization techniques:**
 
@@ -1168,7 +1155,7 @@ The application has **zero database overhead**:
 
 ---
 
-## 🧪 Comprehensive Testing Guide
+## Comprehensive Testing Guide
 
 ### Jest Configuration
 
@@ -1206,14 +1193,14 @@ npm test -- --verbose
 ```
 PASS  tests/server.test.js
   GET /health
-    ✓ returns 200 with ok status (45ms)
-    ✓ includes uptime number (2ms)
-    ✓ includes version string (1ms)
+    [PASS] returns 200 with ok status (45ms)
+    [PASS] includes uptime number (2ms)
+    [PASS] includes version string (1ms)
   GET /api/radar/attacks
-    ✓ returns 503 when no CLOUDFLARE_TOKEN is set (12ms)
-    ✓ includes simulation: true in response (5ms)
+    [PASS] returns 503 when no CLOUDFLARE_TOKEN is set (12ms)
+    [PASS] includes simulation: true in response (5ms)
   GET unknown route
-    ✓ serves the SPA index.html for unknown routes (8ms)
+    [PASS] serves the SPA index.html for unknown routes (8ms)
 
 Test Suites: 1 passed, 1 total
 Tests:       6 passed, 6 total
@@ -1253,7 +1240,7 @@ Run with: `npm test -- feature.test.js`
 
 ---
 
-## 🎓 Learning Resources & References
+## Learning Resources & References
 
 ### Globe.gl / Three.js
 
@@ -1288,7 +1275,7 @@ Run with: `npm test -- feature.test.js`
 
 ---
 
-## ❓ Frequently Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 ### Q: Do I need the Cloudflare API token to run this?
 **A:** No! The dashboard works completely offline in simulation mode with synthetic attack data. The token is only needed if you want to display real Cloudflare Radar data.
@@ -1340,7 +1327,7 @@ Run with: `npm test -- feature.test.js`
 
 ---
 
-## 🚀 Deployment Checklists
+## Deployment Checklists
 
 ### Pre-Deployment Checklist
 
@@ -1391,7 +1378,7 @@ Run with: `npm test -- feature.test.js`
 
 ---
 
-## 📈 Performance Tuning
+## Performance Tuning
 
 ### For Large Attack Volumes
 
@@ -1463,7 +1450,7 @@ app.use(express.static(path.join(__dirname, 'public'), {
 
 ---
 
-## 📝 Troubleshooting Matrix
+## Troubleshooting Matrix
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
@@ -1473,13 +1460,13 @@ app.use(express.static(path.join(__dirname, 'public'), {
 | Health check failing | App not starting | `docker compose logs app` |
 | Docker build slow | Rebuilding cache | `docker system prune -a` (risky, removes images) |
 | CORS errors | Wrong ALLOWED_ORIGIN | Set correct domain in `.env` |
-| API returns 503 | No CLOUDFLARE_TOKEN | That's normal—simulation mode active |
+| API returns 503 | No CLOUDFLARE_TOKEN | That's normal - simulation mode active |
 | High memory usage | Too many arcs | Reduce `maxArcsOnScreen` in config.js |
-| Attack feed empty | Feed generation random | Increase `feedMax` or wait—it's 50% chance |
+| Attack feed empty | Feed generation random | Increase `feedMax` or wait - it's 50% chance |
 
 ---
 
-## 🔄 Version History & Migration
+## Version History & Migration
 
 ### v2.0.0 (Current)
 - ✅ Fixed critical brace style in ui.js
@@ -1508,7 +1495,7 @@ Differences from v1.x:
 
 ---
 
-### ✅ Complete Features
+### Complete Features
 
 - [x] 3D globe visualization with auto-rotation
 - [x] Real-time attack simulation engine
@@ -1523,9 +1510,9 @@ Differences from v1.x:
 - [x] Security hardening
 - [x] Unit tests
 - [x] API documentation
-- [x] ⚠️ **FIXED: Missing closing brace in ui.js**
+- [x] [FIXED] Missing closing brace in ui.js
 
-### 🎯 Potential Enhancements
+### Potential Enhancements
 
 - [ ] Export statistics to CSV/JSON
 - [ ] Dark/light theme toggle
@@ -1539,7 +1526,7 @@ Differences from v1.x:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, bug reports, and feature requests are welcome!
 
@@ -1561,7 +1548,7 @@ Contributions, bug reports, and feature requests are welcome!
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port Already in Use
 
@@ -1607,9 +1594,9 @@ docker compose ps
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the **MIT License** — free for commercial and personal use.
+This project is licensed under the **MIT License** - free for commercial and personal use.
 
 See the [LICENSE](LICENSE) file for full details.
 
@@ -1617,54 +1604,45 @@ See the [LICENSE](LICENSE) file for full details.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **Important:** This dashboard is intended **strictly for educational and cybersecurity awareness purposes.**
 
-- **Simulation Mode** — The default simulation generates **entirely synthetic attack data**. It is NOT real, does not represent actual attacks, and is not connected to any real networks or systems.
-- **Responsible Use** — When using live Cloudflare Radar data, you agree to:
+- **Simulation Mode** - The default simulation generates **entirely synthetic attack data**. It is NOT real, does not represent actual attacks, and is not connected to any real networks or systems.
+- **Responsible Use** - When using live Cloudflare Radar data, you agree to:
   - Comply with [Cloudflare's Terms of Service](https://www.cloudflare.com/terms/)
   - Use the data only for legitimate cybersecurity monitoring
   - Not use this tool for any malicious purposes
-- **No Warranty** — This software is provided AS-IS without any warranty or guarantee
-- **Liability** — The authors are not responsible for any misuse or damage caused by this tool
+- **No Warranty** - This software is provided AS-IS without any warranty or guarantee
+- **Liability** - The authors are not responsible for any misuse or damage caused by this tool
 
 ---
 
-## 📞 Support & Contact
+## Support & Contact
 
-- 📬 **Email:** [maintainer@example.com](mailto:maintainer@example.com)
-- 🐙 **GitHub:** [Open an issue](https://github.com/username/global-threat-monitor/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/username/global-threat-monitor/discussions)
-
----
-
-## 🎉 Acknowledgments
-
-- **[Globe.gl](https://globe.gl/)** — Amazing 3D visualization library
-- **[Three.js](https://threejs.org/)** — WebGL graphics engine
-- **[Cloudflare Radar](https://radar.cloudflare.com/)** — Real-time threat intelligence API
-- **[Helmet.js](https://helmetjs.github.io/)** — HTTP security headers
-- **Security community** — For best practices and feedback
+- Email: [maintainer@example.com](mailto:maintainer@example.com)
+- GitHub: [Open an issue](https://github.com/username/global-threat-monitor/issues)
+- Discussions: [GitHub Discussions](https://github.com/username/global-threat-monitor/discussions)
 
 ---
 
-## 📊 Stats
+## Acknowledgments
 
-- **Total Lines of Code:** ~2,000+
-- **Frontend (JS):** ~500 lines
-- **Styling (CSS):** ~500 lines
-- **Backend (Node):** ~150 lines
-- **Tests:** ~100 lines
-- **Configuration Files:** ~200 lines
-- **Documentation:** ~800 lines (this README)
+- **[Globe.gl](https://globe.gl/)** - Amazing 3D visualization library
+- **[Three.js](https://threejs.org/)** - WebGL graphics engine
+- **[Cloudflare Radar](https://radar.cloudflare.com/)** - Real-time threat intelligence API
+- **[Helmet.js](https://helmetjs.github.io/)** - HTTP security headers
+- **Security community** - For best practices and feedback
+
+---
+
 
 ---
 
 <div align="center">
 
-**Made with ❤️ for cybersecurity enthusiasts and threat intelligence professionals**
+**Made with care for cybersecurity enthusiasts and threat intelligence professionals**
 
-[⬆ Back to top](#-global-threat-monitor)
+[Back to top](#global-threat-monitor)
 
 </div>

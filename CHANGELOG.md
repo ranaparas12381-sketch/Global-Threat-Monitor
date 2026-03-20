@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [2.0.0] — 2026-03-20
+## [2.0.0] - 2026-03-20
 
 ### Added
 - Complete project restructure into organized module layout
@@ -55,7 +55,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.0] — 2025-12-27
+## [1.0.0] - 2025-12-27
 
 ### Added
 - Initial proof-of-concept: single HTML file with embedded JS
